@@ -67,4 +67,5 @@ SELECT  *  FROM tb_produtos WHERE preco BETWEEN 50.00 AND 150.00 ;
 
 SELECT * FROM tb_produtos WHERE produto LIKE 'C%';
 
-SELECT * FROM tb_categorias  INNER JOIN tb_produtos ON tb_categorias.id = tb_categorias.categoria_id;
+SELECT * FROM tb_produtos INNER JOIN tb_categorias
+ON tb_categorias.id = tb_produtos.categoria_id;

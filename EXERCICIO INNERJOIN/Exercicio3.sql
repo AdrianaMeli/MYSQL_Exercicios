@@ -70,3 +70,6 @@ SELECT * FROM tb_produtos WHERE produtos LIKE 'C%';
 SELECT * FROM tb_categorias  INNER JOIN tb_produtos ON tb_categorias.id = tb_produtos.categoria_id;
 
 
+SELECT * FROM tb_categorias  INNER JOIN tb_produtos ON tb_categorias.id = tb_produtos.categoria_id
+WHERE tb_categorias.categoria = "Calmantes"
+ORDER BY tb_categorias.categoria;

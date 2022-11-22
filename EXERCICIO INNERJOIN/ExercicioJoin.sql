@@ -67,4 +67,7 @@ SELECT  *  FROM tb_categorias WHERE preco <  500.00 ;
 
 SELECT * FROM tb_categorias WHERE cursos LIKE 'J%';
 
-SELECT * FROM tb_categorias  INNER JOIN tb_cursos ON tb_cursos.id = tb_categorias.categoria_id;
+SELECT * FROM tb_categorias  INNER JOIN tb_cursos ON tb_cursos.id = tb_categorias.categoria_id
+WHERE tb_cursos.categoria = "Backend"
+order by tb_categorias.cursos;
+
